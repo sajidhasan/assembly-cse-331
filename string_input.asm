@@ -14,8 +14,9 @@ Input:
     jmp Input
 
 Finished:    
-
-
+    mov dx, offset arr
+    mov ah, 9
+    int 21h
 
 ret
 arr db 100 dup(?)
